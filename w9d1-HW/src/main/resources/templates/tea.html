@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>Tea notes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/style.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form action="#" th:action="@{/tea}" th:object="${tea}" method="post">
+      <p>Id: <input type="text" th:field="*{id}" /></p>
+      <p>Common name: <input type="text" th:field="*{commonName}" /></p>
+      <p>Vendor name: <input type="text" th:field="*{vendorName}" /></p>
+      <p>Category: <input type="text" th:field="*{category}" /></p>
+      <p>Location: <input type="text" th:field="*{location}" /></p>
+      <p>Weight (g): <input type="text" th:field="*{weightGrams}" /></p>
+      <p>Volume (ml): <input type="text" th:field="*{volume_ml}" /></p>
+      <p>Brewing method: <input type="text" th:field="*{brewingMethod}" /></p>
+      <p>Tasting notes: <input type="text" th:field="*{tastingNotes}" /></p>
+      <p>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </p>
+    </form>
+  </body>
+</html>
+
+<!-- https://github.com/PTroyP/handling_form_submission/blob/main/initial/src/main/resources/templates/greeting.html -->
