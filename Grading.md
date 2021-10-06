@@ -1,5 +1,9 @@
 # Grading
 
+# Screenshots
+
+Screenshots folder of this repo
+
 # Add in Styling (through a CSS Sheet)
 
 `style.css` in `resources/static`
